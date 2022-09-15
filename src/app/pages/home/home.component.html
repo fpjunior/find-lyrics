@@ -1,0 +1,29 @@
+<div style="display: grid; justify-content: space-around;">
+
+  <h1>BUSCAR LETRAS</h1>
+
+  <div style="display: inline-grid;">
+    <label>Artista</label>
+    <input [value]="artist" name="artist" [(ngModel)]="artist">
+  </div>
+
+  <div style="display: inline-grid;">
+    <label>Música</label>
+    <input [value]="music" name="music" [(ngModel)]="music">
+  </div>
+
+  <div style="display: inline-grid; margin-top: 16px;">
+    <button (click)="findLyrics()">BUSCAR</button>
+  </div>
+</div>
+
+<body>
+  <h1>{{titleMusic}}</h1>
+  <h3>{{artistMusic}}</h3>
+
+  <div class="bloco-text">
+    <pre>{{lyricMusic}}</pre>
+    <pre>{{translatedMusic}}</pre>
+  </div>
+
+</body>
